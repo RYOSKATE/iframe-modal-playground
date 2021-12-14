@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>parent page</title>
+    <style>
+        /*ここからjsで挿入する必要あり*/
+        #fill-overlay-for-iframe{
+            position: absolute;
+            z-index: 2147483647;
+            right: 0; bottom: 0;
+            width: 50px; height: 50px;
+            background-color: rgba( 255, 255, 255, 0.2);
+        }
+        #iframe-container {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 50px;
+            height: 50px;
+            background-color: rgba( 255, 255, 255, 0.2);
+        }
+
+        #iframe {
+            background-color: rgba( 255, 255, 255, 0.2);
+        }
+        /*ここまでjsで挿入する必要あり*/
+        #parent-id-1 {
+            color: red;
+        }
+
+        #parent-id-2 {
+            color: green;
+        }
+
+        .parent-class-1 {
+            color: blue;
+        }
+
+        .parent-class-2 {
+            color: rgb(184, 184, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="parent-id-1">parent page</h1>
+    <p> 前半</p>
+    <p class="parent-class-1"> あああああああああああああああああああああああああああああああああああああああ</p>
+    <p> アアアアアアアアアアアアアアアアアアアアアアアアアアアアアアアアアアアアアアア</p>
+
+    <!-- ここからjsで挿入する必要あり -->
+    <div id="fill-overlay-for-iframe">
+        <div id="iframe-container">
+            <iframe id="iframe"src="./child.html" width="100%" height="100%" style="border: 0;"></iframe>
+        </div>
+    </div>
+    <!-- ここまでjsで挿入する必要あり -->
+
+    <h1 id="parent-id-2">parent page</h1>
+    <p > 後半</p>
+    <p class="parent-class-2"> おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお</p>
+    <p> オオオオオオオオオオオオオオオオオオオオオオオオオオオオオオオオオオオオオオオ</p>
+
+
+    <h1 >parent page</h1>
+    <p > スペーう埋め</p>
+    <p >にゃーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー</p>
+    <p> ニャーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー</p>
+
+    <h1 >parent page</h1>
+    <p > スペーう埋め</p>
+    <p >にゃーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー</p>
+    <p> ニャーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー</p>
+
+    <h1 >parent page</h1>
+    <p > スペーう埋め</p>
+    <p >にゃーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー</p>
+    <p> ニャーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー</p>
+
+</body>
+
+</html>
